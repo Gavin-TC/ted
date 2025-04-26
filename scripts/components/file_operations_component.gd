@@ -90,7 +90,7 @@ func _on_file_menu_button_pressed(id: int) -> void:
 
 
 func save_file(path: String) -> void:
-	print("Saving file...")
+	# print("Saving file...")
 
 	if path == "":
 		return
@@ -128,15 +128,15 @@ func _on_file_selected(path: String) -> void:
 		var content: String = file.get_as_text()
 		editor.text = content
 
-		print("path: ", path)
-		print("content: ", content)
+		# print("path: ", path)
+		# print("content: ", content)
 
 		emit_signal("file_opened", path)
 
 		# If the tab doesn't exist yet, add the tab
 		# with file name as the title and path as the tooltip.
 		if get_tab_by_title(path.get_file()) == -1:
-			print("adding tab")
+			# # print("adding tab")
 			file_tab_bar.add_tab(path.get_file())
 			var idx: int = get_tab_by_title(path.get_file())
 			file_tab_bar.set_tab_tooltip(idx, path)
