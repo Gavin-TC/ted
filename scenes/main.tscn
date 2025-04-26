@@ -1,0 +1,267 @@
+[gd_scene load_steps=19 format=3 uid="uid://betak525gvead"]
+
+[ext_resource type="Script" uid="uid://bnm0pv1mpm7e6" path="res://scripts/scenes/main.gd" id="1_o5qli"]
+[ext_resource type="Theme" uid="uid://db4m142aihrje" path="res://theme/main_theme.tres" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://c2c4x6m0frvl1" path="res://scripts/components/file_operations_component.gd" id="2_sugp2"]
+[ext_resource type="Script" uid="uid://w4xqij5fb1r0" path="res://scripts/components/view_menu_button_component.gd" id="3_tbgi4"]
+[ext_resource type="Script" uid="uid://2gr1ofd02m5o" path="res://scripts/components/file_tab_bar_component.gd" id="4_tefeu"]
+[ext_resource type="Script" uid="uid://d28dsl5xc8n6k" path="res://scripts/components/save_load_component.gd" id="5_tefeu"]
+[ext_resource type="Texture2D" uid="uid://6lcq8fgqwyho" path="res://assets/icon.png" id="7_o6xl0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o6xl0"]
+font_size = 44
+font_color = Color(0.878431, 0.882353, 0.866667, 1)
+outline_size = 2
+outline_color = Color(0.466667, 0.552941, 0.662745, 1)
+shadow_size = 2
+shadow_color = Color(0.254902, 0.352941, 0.466667, 1)
+shadow_offset = Vector2(1, -1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tefeu"]
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+corner_radius_top_left = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o6xl0"]
+bg_color = Color(0.105882, 0.14902, 0.231373, 1)
+corner_radius_top_left = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tipki"]
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+corner_radius_top_left = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85g3d"]
+bg_color = Color(0.466667, 0.552941, 0.662745, 1)
+corner_radius_top_left = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afw5t"]
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fetd"]
+bg_color = Color(0.105882, 0.14902, 0.231373, 1)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1knni"]
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_os614"]
+bg_color = Color(0.466667, 0.552941, 0.662745, 1)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
+bg_color = Color(0.878431, 0.882353, 0.866667, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="CodeHighlighter" id="CodeHighlighter_0wfyh"]
+number_color = Color(0.483479, 0.852798, 1, 1)
+symbol_color = Color(0.976471, 0.458824, 0.427451, 1)
+function_color = Color(0.664204, 0.474379, 1, 1)
+member_variable_color = Color(0.662745, 0.47451, 1, 1)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_o5qli")
+
+[node name="FileOperationsComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_sugp2")
+
+[node name="ViewMenuButtonComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_tbgi4")
+
+[node name="FileTabBarComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_tefeu")
+
+[node name="SaveLoadComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("5_tefeu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_0wfyh")
+
+[node name="Control" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Control/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Icon" type="TextureRect" parent="CanvasLayer/Control/Control/MarginContainer/VBoxContainer/HBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 80)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("7_o6xl0")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Control/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 0
+
+[node name="tEDLabel" type="Label" parent="CanvasLayer/Control/Control/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 40
+text = "tED"
+label_settings = SubResource("LabelSettings_o6xl0")
+
+[node name="VersionLabel" type="Label" parent="CanvasLayer/Control/Control/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 12
+text = "1.0.0"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.08
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="FileMenuButton" type="MenuButton" parent="CanvasLayer/Control/VBoxContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 28)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("2_0wfyh")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxFlat_tefeu")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_o6xl0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tipki")
+theme_override_styles/normal = SubResource("StyleBoxFlat_85g3d")
+text = "FILE"
+flat = false
+
+[node name="ViewMenuButton" type="MenuButton" parent="CanvasLayer/Control/VBoxContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 28)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("2_0wfyh")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxFlat_afw5t")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_5fetd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1knni")
+theme_override_styles/normal = SubResource("StyleBoxFlat_os614")
+text = "VIEW"
+flat = false
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_right = 12
+
+[node name="Separator" type="Panel" parent="CanvasLayer/Control/VBoxContainer/MarginContainer2"]
+visible = false
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0wfyh")
+
+[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/VBoxContainer/MarginContainer3"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="FileTabBar" type="TabBar" parent="CanvasLayer/Control/VBoxContainer/MarginContainer3/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 33)
+layout_mode = 2
+theme = ExtResource("2_0wfyh")
+tab_alignment = 1
+tab_close_display_policy = 1
+max_tab_width = 200
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer/Control/VBoxContainer/MarginContainer3/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_0wfyh")
+emoji_menu_enabled = false
+middle_mouse_paste_enabled = false
+minimap_draw = true
+minimap_width = 100
+caret_blink = true
+syntax_highlighter = SubResource("CodeHighlighter_0wfyh")
+draw_tabs = true
+
+[connection signal="tab_changed" from="CanvasLayer/Control/VBoxContainer/MarginContainer3/VBoxContainer/FileTabBar" to="FileOperationsComponent" method="_on_file_tab_bar_tab_changed"]
+[connection signal="tab_close_pressed" from="CanvasLayer/Control/VBoxContainer/MarginContainer3/VBoxContainer/FileTabBar" to="FileOperationsComponent" method="_on_file_tab_bar_tab_close_pressed"]
+[connection signal="text_changed" from="CanvasLayer/Control/VBoxContainer/MarginContainer3/VBoxContainer/TextEdit" to="FileOperationsComponent" method="_on_text_edit_text_changed"]

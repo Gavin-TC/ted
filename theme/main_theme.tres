@@ -1,0 +1,162 @@
+[gd_resource type="Theme" load_steps=30 format=3 uid="uid://db4m142aihrje"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8g5i"]
+bg_color = Color(0.105882, 0.14902, 0.231373, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a7tdx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ftk8o"]
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4xa5k"]
+bg_color = Color(0.466667, 0.552941, 0.662745, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fqy7u"]
+bg_color = Color(0.105882, 0.14902, 0.231373, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fetd"]
+bg_color = Color(0.105882, 0.14902, 0.231373, 1)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afw5t"]
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1knni"]
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_os614"]
+bg_color = Color(0.466667, 0.552941, 0.662745, 1)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dut6s"]
+bg_color = Color(0.105882, 0.14902, 0.231373, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6sc48"]
+bg_color = Color(0.0509804, 0.105882, 0.164706, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t4k2v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dkcgw"]
+bg_color = Color(0.466667, 0.552941, 0.662745, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g5yx"]
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75705"]
+content_margin_left = 8.0
+bg_color = Color(0.878431, 0.882353, 0.866667, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5fetd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7tdx"]
+content_margin_left = 8.0
+bg_color = Color(0.254902, 0.352941, 0.466667, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cibxr"]
+content_margin_left = 8.0
+bg_color = Color(0.466667, 0.552941, 0.662745, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adhqp"]
+content_margin_left = 8.0
+bg_color = Color(0.105882, 0.14902, 0.231373, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5fetd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t4k2v"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+bg_color = Color(0.105882, 0.14902, 0.231373, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_afw5t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1knni"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_os614"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dut6s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_adhqp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cibxr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m8g5i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_75705"]
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxFlat_m8g5i")
+Button/styles/focus = SubResource("StyleBoxEmpty_a7tdx")
+Button/styles/hover = SubResource("StyleBoxFlat_ftk8o")
+Button/styles/normal = SubResource("StyleBoxFlat_4xa5k")
+Button/styles/pressed = SubResource("StyleBoxFlat_fqy7u")
+MenuButton/font_sizes/font_size = 18
+MenuButton/styles/disabled = SubResource("StyleBoxFlat_5fetd")
+MenuButton/styles/focus = SubResource("StyleBoxFlat_afw5t")
+MenuButton/styles/hover = SubResource("StyleBoxFlat_1knni")
+MenuButton/styles/normal = SubResource("StyleBoxFlat_os614")
+MenuButton/styles/pressed = SubResource("StyleBoxFlat_dut6s")
+Panel/styles/panel = SubResource("StyleBoxFlat_6sc48")
+PopupMenu/constants/min_width = 100
+PopupMenu/font_sizes/font_separator_size = 19
+PopupMenu/font_sizes/font_size = 19
+PopupMenu/styles/focus = SubResource("StyleBoxEmpty_t4k2v")
+PopupMenu/styles/hover = SubResource("StyleBoxFlat_dkcgw")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_1g5yx")
+TabBar/font_sizes/font_size = 18
+TabBar/styles/button_pressed = SubResource("StyleBoxFlat_75705")
+TabBar/styles/tab_focus = SubResource("StyleBoxEmpty_5fetd")
+TabBar/styles/tab_hovered = SubResource("StyleBoxFlat_a7tdx")
+TabBar/styles/tab_selected = SubResource("StyleBoxFlat_cibxr")
+TabBar/styles/tab_unselected = SubResource("StyleBoxFlat_adhqp")
+TextEdit/styles/focus = SubResource("StyleBoxTexture_5fetd")
+TextEdit/styles/normal = SubResource("StyleBoxFlat_t4k2v")
+VScrollBar/styles/focus = SubResource("StyleBoxEmpty_afw5t")
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_1knni")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_os614")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_dut6s")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_adhqp")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_cibxr")
+Window/styles/embedded_border = SubResource("StyleBoxEmpty_m8g5i")
+Window/styles/embedded_unfocused_border = SubResource("StyleBoxEmpty_75705")
